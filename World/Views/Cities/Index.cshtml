@@ -1,0 +1,13 @@
+@using World.Models;
+
+<h1>List of Cities: </h1>
+
+@foreach (City city in @Model)
+{
+    <h2>City: @city.GetName()</h2>
+    <ul>
+        <li>Population: @city.GetPopulation()</li>
+        <li>Country Code: @city.GetCountryCode()</li>
+    </ul>
+    <p>------------------------------------------</p>
+}

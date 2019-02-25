@@ -1,0 +1,16 @@
+@using World.Models;
+
+<h1>List of countries:</h1>
+
+
+@foreach (Country country in @Model)
+{
+    <h2>Country: @country.GetName()</h2>
+    <ul>
+        <li>Continent: @country.GetContinent()</li>
+        <li>Population: @country.GetPopulation()</li>
+        <li>Region: @country.GetRegion()</li>
+    </ul>
+        <p>------------------------------------------------------------</p>
+}
+
